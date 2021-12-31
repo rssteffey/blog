@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/stylesheets/pygment_trac.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/stylesheets/print.css" media="print" />
 
-    <link href='http://rssteffey.github.io/feed.xml' rel='alternate' type='application/atom+xml'>
+    <link href='http://rssteffey.github.io/blog/feed.xml' rel='alternate' type='application/atom+xml'>
     <title> {{ page.title }} </title>
 
     <!-- Twitter and Slack link previews -->
@@ -26,8 +26,8 @@
       <meta property="og:title"  content="{{ site.title }}" />
     {% endif %}
     {% if page.url %}
-      <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-      <meta property="og:url"  content="{{ site.url }}{{ page.url }}" />
+      <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
+      <meta property="og:url"  content="{{ site.url }}{{ site.baseurl }}{{ page.url }}" />
     {% endif %}
     {% if page.description %}
       <meta name="twitter:description" content="{{ page.description }}">
@@ -37,11 +37,11 @@
       <meta property="og:description"  content="{{ site.description }}" />
     {% endif %}
     {% if page.image %}
-      <meta name="twitter:image" content="{{ site.url }}/Images/previews/{{ page.image }}">
-      <meta property="og:image"  content="{{ site.url }}/Images/previews/{{ page.image }}" />
+      <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/Images/previews/{{ page.image }}">
+      <meta property="og:image"  content="{{ site.url }}{{ site.baseurl }}/Images/previews/{{ page.image }}" />
     {% else %}
-      <meta name="twitter:image" content="{{ site.url }}/Images/previews/rawr.png">
-      <meta property="og:image"  content="{{ site.url }}/Images/previews/rawr.png" />
+      <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/Images/previews/rawr.png">
+      <meta property="og:image"  content="{{ site.url }}{{ site.baseurl }}/Images/previews/rawr.png" />
     {% endif %}
 	
 	<script>
@@ -88,7 +88,7 @@
       <div class="inner" id="titleArea">
         <h1> <a href="/blog">Sketchy Bits</a></h1>
         <h2>A Blog of Code, Art, and General Doodlings</h2>
-		<img class="title" src="/Images/plane.png" height="112" width="354" alt="Wheeeeee"></img>
+		<img class="title" src="{{ site.baseurl }}/Images/plane.png" height="112" width="354" alt="Wheeeeee"></img>
       </div>
     </header>
 
@@ -135,7 +135,7 @@
       
       <!-- Share Button -->
          <div class="fb-share-button" 
-             data-href="{{ site.url }}{{ page.url }}" 
+             data-href="{{ site.url }}{{ site.baseurl }}{{ page.url }}" 
              data-layout="button">
          </div>
       <br/>

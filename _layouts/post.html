@@ -4,11 +4,11 @@ layout: default
 
 <div id="post-nav" class="clearfix" style="margin-bottom:20px; text-align:center">
   {% if page.previous.url %} 
-    <a class="prev" href="{{page.previous.url}}">&laquo; Previous Post</a> 
+    <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; Previous Post</a> 
   {% endif %} 
   <p style="display:inline">&nbsp &nbsp &nbsp &nbsp &nbsp</p>
   {% if page.next.url %} 
-    <a class="next" href="{{page.next.url}}">Next Post &raquo;</a> 
+    <a class="next" href="{{ site.baseurl }}{{page.next.url}}">Next Post &raquo;</a> 
   {% endif %} 
 </div>
 
@@ -21,11 +21,11 @@ layout: default
 
 <div id="post-nav" class="clearfix" style="margin-top:100px; text-align:center">
   {% if page.previous.url %} 
-    <a class="prev" href="{{page.previous.url}}">&laquo; Previous Post</a> 
+    <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; Previous Post</a> 
   {% endif %} 
   <p style="display:inline">&nbsp &nbsp &nbsp &nbsp &nbsp</p>
   {% if page.next.url %} 
-    <a class="next" href="{{page.next.url}}">Next Post &raquo;</a> 
+    <a class="next" href="{{ site.baseurl }}{{page.next.url}}">Next Post &raquo;</a> 
   {% endif %} 
 </div>
 
