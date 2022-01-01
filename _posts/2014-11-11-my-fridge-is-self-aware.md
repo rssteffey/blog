@@ -28,7 +28,6 @@ The script only took a couple of hours to get down. Most of the time was spent g
 
 The ***code*** for the Tweeting process is incredibly straightforward. \[Using the Twython library\]
 
-    <code>
     APP_KEY = REDACTED  
     APP_SECRET = REDACTED  
     OAUTH_TOKEN = 'JustPictureThisAsARandomJumbleOfLettersRoughlyThisLong'
@@ -38,7 +37,6 @@ The ***code*** for the Tweeting process is incredibly straightforward. \[Using t
     twitter = Twython(APP_KEY, APP_SECRET, OAUTH_TOKEN, OAUTH_TOKEN_SECRET)
     #Send it on
     twitter.update_status(status=toTweet)
-    </code>
 
 What I still don't have a handle on is how to correctly and securely get those first four variables.
 For the purposes of this experiment (Throwaway Twitter account and one-person app), I manually grabbed the tokens and secrets from the Twitter Developer stats pages for my registered app and hardcoded them into the script.
@@ -51,19 +49,15 @@ Since I was just doing simple contour classification on 26 possible classes, I d
 
 OpenCV makes this an incredibly complicated process.
 
-    <code>
     model = cv2.KNearest()
-    </code>
 
 And then there's the laborious page after page of code to input the sample data and train the classifier...
 
-    <code>
     samples = np.loadtxt('generalsamples.data',np.float32)
     responses = np.loadtxt('generalresponses.data',np.float32)
     responses = responses.reshape((responses.size,1))
 
     model.train(samples,responses)
-    </code>
 
 Oh. Well that went much easier than expected.. Let's see how we did.
 
@@ -73,10 +67,8 @@ Oh yeah. We should probably take an image, find the contours, and match those co
 
 I will spare you the details on image alterations, just because they are truly a result of random tinkering. I can only back up a few of my choices and all else was purely trial and error.
 
-    <code>
     crop = camera_capture[125:(125+height), 200:(200+width)]
     colorblur = cv2.GaussianBlur(crop,(5,5),0)
-    </code>
 
 Okay, well so far, that's straightforward.
 
@@ -85,7 +77,6 @@ Okay, well so far, that's straightforward.
 
 And now we'll go through the small ranges of each possible color, to isolate only the letter parts of the image:
 
-    <code>
     boundaries = [
             ([25, 100, 30], [43, 255, 255]), #yellow
             ([50, 135, 50], [96, 255, 255]), #green
@@ -104,14 +95,11 @@ And now we'll go through the small ranges of each possible color, to isolate onl
         #Add these color pixels to mask
         r1 = cv2.inRange(img_hsv, lower, upper)
         mask = cv2.add(r1,mask)
-    </code>
 
 And then take that mask and find the contours!
 
-    <code>
     output = cv2.bitwise_and(colorblur, colorblur, mask = mask)
     contours, hierarchy = cv2.findContours(backtogray,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
-    </code>
 
 We have the contours, but we have to classify them. Now here's where things got tricky.
 My first iteration disregarded letter color entirely. I (naively) assumed that a static camera angle and distinct set of only 26 uniform characters would make detection pretty straightforward.
@@ -129,7 +117,6 @@ So, I redesigned the contour classifications to be hue specific.
 Not wanting to uproot my entire process, I sacrificed some processing speed for ease of implementation (The webcam was only taking an image every minute, so the efficiency loss \[within reason\] doesn't affect the program)
 I read the initial contours as before, and just changed my classifications after the fact to try and line up with associated letter colors
 
-    <code>
     if avg[0] >= 45 and avg[0] < 95: #greens
         if chr(results[0][0]) in 'cgnrx':
             string = chr(results[0][0])
@@ -138,7 +125,6 @@ I read the initial contours as before, and just changed my classifications after
                 if chr(int(letter)) in 'cgnrx':
                     string = chr(int(letter))
                     break;
-    </code>
 
 C, G, N, R, and X are the green letters in the magnet set we have, so my classifications are now narrowed to that range. If my classification failed to fall under one of those options, I attempt the next closest result in the 'neighbors' list (created by the initial classification attempt)
 This conditional is repeated for each of the colors and their respective contour objects (With a contour's color being determined by the hue at it's center of mass).

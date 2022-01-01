@@ -18,8 +18,20 @@ layout: default
 
 {{ content }}
 
+<div class="post-tags" style="margin-top:50px;">
+  Tags: &nbsp;
+  {% if post %}
+    {% assign tags = post.tags %}
+  {% else %}
+    {% assign tags = page.tags %}
+  {% endif %}
+  {% for tag in tags %}
+  <a href="{{site.baseurl}}/tags/#{{tag|slugize}}-tag">{{tag}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+</div>
 
-<div id="post-nav" class="clearfix" style="margin-top:100px; text-align:center">
+<div id="post-nav" class="clearfix" style="margin-top:30px; text-align:center">
   {% if page.previous.url %} 
     <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; Previous Post</a> 
   {% endif %} 

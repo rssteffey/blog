@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leaping Out on a Jekyll Tether
-tags: jekyll blog
+tags: humor
 comments: true
 Description: In which Shawn starts a blog!
 ---
@@ -27,7 +27,8 @@ I was not. And any dreams of quickly setting up a blog dimmed as I fumbled aroun
 
 ![All formatting languages, as we meet them, are commingled out of good and evil: and Hyde, alone, in the ranks of syntax, was pure evil.](http://i.imgur.com/1dGc8aZ.png "All formatting languages, as we meet them, are commingled out of good and evil: and Hyde, alone, in the ranks of syntax, was pure evil.")
 
-<span style="color:#AAAAAA;">Hyde emerged sometime around 2am</span>
+<span >Hyde emerged sometime around 2am</span>
+{: style="color:#AAAAAA; text-align:center; text-align: center;"}
 
 But, after a harrowing few days of dependency errors, PATH mistakes, file corruption -- including a perfectly timed power outage while Ruby rifled through crucial files -- and general chaos, I'm finally here.
 

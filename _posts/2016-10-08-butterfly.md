@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fenceposts & Butterflies
-tags: humor, work, advice
+tags: humor programming
 comments: true
 published: true
 description: In which we discuss time and bottling team culture

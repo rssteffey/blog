@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Experimental Prototype Search Engine of Tomorrow
-tags: art, EPCOT, Google, obsession
+tags: design
 comments: true
 published: true
 description:  In which Shawn reveals a tad too much of his obsessive side.
@@ -15,7 +15,7 @@ If you haven't seen it yet, the plans for Google's new Mountain View headquarter
 <iframe width="420" height="315" src="http://www.youtube.com/embed/z3v4rIG8kQA" frameborder="0" allowfullscreen>
 </iframe>
 </div>
-</br>
+<br/>
 But the empty phrasing and nonsensical statements aren't the fault of the designers.
 This is a PR campaign, and getting emotion out of a nation of largely disinterested people is exactly the type of thing these releases are good at. The video works for the intended purpose.
 
@@ -23,13 +23,13 @@ However, the underlying concepts of what Google is attempting remain relevant. T
 
 As much as I enjoy architecture, I'm far from an expert. The field is far too wide for my passing interests to accurately represent in this post. However, I feel more than qualified for an incredibly brief look at the commonality between these plans and those of 1970's era EPCOT (Experimental Prototype Community of Tomorrow) concept art (and why the video excites me so much as a result).
 
-I recommend reading the rest of the post while this music plays:
+I recommend reading the rest of the post while this music plays: <span class="ref"><span class="refnum">[1]</span><span class="refbody small">("Cities of Tomorrow", from Sim City 2013)</span>
 
 <div style="text-align: center">
 <iframe width="420" height="29" src="http://www.youtube.com/embed/ES3yOaHqfZ4" frameborder="0" allowfullscreen>
 </iframe>
 </div>
-("Cities of Tomorrow", from Sim City 2013)
+
 
 <hr/>
 Disney has always produced masterful concept art:
@@ -70,7 +70,7 @@ Whether that be the use of giant glass structures to draw the eye...
 
 ![The Imagination Pavilion exterior](http://i.imgur.com/f2e9XdV.jpg "The Imagination Pavilion exterior")
 
-</br>
+<br/>
 
 Well-lit outdoor environments and public pavilions...
 
@@ -78,7 +78,7 @@ Well-lit outdoor environments and public pavilions...
 
 ![The Land Pavilion again, with less glass than the final build](http://i.imgur.com/8JPDYKe.jpg "The Land Pavilion again, with less glass than the final build")
 
-</br>
+<br/>
 
 Cubic, modular buildings and living spaces, surrounded by natural beauty...
 
@@ -86,7 +86,7 @@ Cubic, modular buildings and living spaces, surrounded by natural beauty...
 
 ![The \[distant\] future, as imagined by this concept art for the Horizons ride](http://i.imgur.com/C1hyHoU.jpg "The [distant] future, as imagined by this concept art for the Horizons ride")
 
-</br>
+<br/>
 
 or the bright, overexposed sunrise of looking to the future...
 

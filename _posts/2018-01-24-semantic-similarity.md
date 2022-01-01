@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Designing For Frustration
-tags: design, games, wordabeasts
+tags: design, games
 comments: true
 published: false
 description: In which Shawn reacts to an old design decision

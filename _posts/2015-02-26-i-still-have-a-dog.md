@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Echo II
-tags: dog
+tags: humor
 comments: true
 published: true
 description: In which Shawn deals with his choice to adopt a living caffeine molecule

@@ -26,7 +26,6 @@ Naively throwing colors at everything didn't help much...
 And that's when I realized my intended normalization was wrong.
 I was correcting the data to make it percentage based (so all 26 characters' values added up to 1.0)
 
-    <code>
     def normalize(sourceDicts):
         '''Normalize the given dictionaries'''
         newVals = []
@@ -39,12 +38,10 @@ I was correcting the data to make it percentage based (so all 26 characters' val
             for letter in  sorted(sourceDicts[i].items()):
                 newVals[i].append(letter[1] / sum)
         return newVals
-    </code>
 
 This isn't inherently wrong. In fact, that data is clearer to examine trends within one letter.
 However, I actually wanted to correct so that the values were evenly spread from 0.0-1.0, giving a wider value range for the output.
 
-    <code>
     def normalize2(sourceList):
         '''Actually normalize the initial normalize() results'''
         newVals = []
@@ -60,14 +57,11 @@ However, I actually wanted to correct so that the values were evenly spread from
             for letterVal in  sourceList[i]:
                 newVals[i].append((letterVal - min)/(max - min))
         return newVals
-    </code>
 
 Unfortunately, one of the side effects of planning your entire program out before getting familiar with the libraries, is unnecessary code.
 MatPlotLib has all of the normalization built in and would have saved me half an hour:
 
-    <code>
     cm.colors.Normalize(sourceList)
-    </code>
 
 Regardless, I've stuck to using my own in the final script. I like having the finer grain tweaking if necessary.
 

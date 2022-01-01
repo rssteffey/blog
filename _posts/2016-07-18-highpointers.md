@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Highpoints GO™
-tags: humor, life, mountains, pokemon
+tags: humor
 comments: true
 published: true
 description: In which Shawn evaluates life goals and Pokémon.
@@ -26,7 +26,7 @@ This month, I took a road trip with a couple of friends to hit 6 state highpoint
 
 The actual fun is found in the moments of searching. The bits of climbing over a drainage ditch because that Bulbasaur is within 20 meters. Of splitting up and wandering through the empty cineplex parking lot in a grid pattern to try and narrow the range down. Of failing to catch the flipping thing because the servers dropped and realizing that you should probably get back to the hotel because those storm clouds are rolling in *fast*.
 
-We left the hotel objectively to catch Pokémon, but in reality to run around and be idiots for a night.
+We left the hotel ostensibly to catch Pokémon, but in reality to run around and be idiots for a night.
 
 <br/>
 ![Drawing storage belts around stick figures is a lost cause](http://i.imgur.com/r8r8ZMk.png "Drawing storage belts around stick figures is a lost cause")

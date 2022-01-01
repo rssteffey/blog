@@ -4,11 +4,13 @@ title: Sketchy Bits
 permalink: /index.html
 ---
 <div id=home">
+	<h2>Full Archive</h2> 
+	<p>All SketchyBits posts, or you can <a href="/tags">Browse by Tag</a> </p>
 	<ul id="archive" class="archive_list">
 	{% for post in site.posts %}
-	  <li>
-		<span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
-	  </li>
+			<li>
+				<span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+			</li>
 	{% endfor %}
 	</ul>
 </div>

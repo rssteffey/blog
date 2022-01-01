@@ -1,0 +1,30 @@
+---
+layout: default
+title: Sketchy Bits
+permalink: /tags
+---
+<div id=home">
+
+	<h2>Posts by Tag </h2>
+	<p>Browse by type, or <a href="/">return to the full archive</a></p>
+
+	<ul id="tags-list" class="tags_list">
+		{% assign sorted_tags = site.tags | sort %}
+		{% for tag in sorted_tags %}
+		{% assign t = tag | first %}
+		{% assign posts = tag | last %}
+	  
+	  <h3 id="{{ t | downcase }}-tag" style="color: #777777">{{ t | capitalize }} </h3>
+	  <ul>
+	  {% for post in posts %}
+		{% if post.tags contains t %}
+		<li>
+		  <a href="{{ post.url }}">{{ post.title }}</a> 
+		  <span class="date" style="font-size: 0.8em; margin-left: 0.5em; color: #888">{{ post.date | date: "%Y"  }}</span>
+		</li>
+		{% endif %}
+	  {% endfor %}
+	  </ul>
+	  {% endfor %}
+	</ul>
+</div>

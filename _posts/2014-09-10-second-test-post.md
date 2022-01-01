@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sketchy Bits- Now two-way opinion enabled!
-tags: jekyll blog
+tags: 
 comments: true
 ---
 

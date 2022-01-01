@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Fear is a Good Thing
-tags: humor, death
+tags: humor
 comments: true
 published: true
 description: In which we discuss the utility of fear and its applications towards not dying.
@@ -50,9 +50,10 @@ As I bobbed there wincing through the pain, it slowly dawned on me that I was no
 
 I managed to swim (flail in a uniform direction) back to land while assuring the rest of the group I was okay, and after crawling back up onto the rocky shoreline like a fish 2000 years over-eager for his evolutionary progression, endured the incredibly painful hike and bumpy drive back to campus where my muscle relaxants awaited.
 
-So that would be the story of the scariest moment in my life.
+So that's the story of the scariest moment in my life.
 
 <br/>
+<hr/>
 
 Except that wasn't it. That was point B.
 

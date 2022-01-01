@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Contractual Obligation
-tags: unity, game
+tags: games
 comments: true
 published: true
 description: No one is going to post this link.  Why do I need a description here?
@@ -17,7 +17,7 @@ Even the simplest of posts take a bundle of time- and that's not even accounting
 
 ![You know that day they taught everyone 2 and 3 point perspective in art class?  I missed that.](http://i.imgur.com/eBmUf7S.png "You know that day they taught everyone 2 and 3 point perspective in art class?  I missed that.")
 
-</br>
+<br/>
 
 Allie has posted openly about her depression and mental blocks several times now, and while I certainly do not suffer from depression by any means- the anxiety problems I can completely empathize with. Writing and drawing and editing and over-analyzing every little detail of the post until just getting sick of it and committing to Github anyways- And then continuing to read through the post over and over after it's gone live, obsessing over everything I know is wrong or badly phrased or could have been much better illustrated.
 It's the exact same cycle I go through while video-editing and painting and pretty much anything I make and release to be seen by any number of the terrifying "public".
@@ -44,10 +44,10 @@ It's an easy promise to make at this point- since I am still early on and genera
 
 ![I made a thing](http://i.imgur.com/LUb0g03.png "I made a thing")
 
-</br>
+<br/>
 
 But I know me. And the bin already beckons...
 
-</br>
+<br/>
 
 ![Feed me, Seymour](http://i.imgur.com/j3SM1j3.png "Feed me, Seymour")

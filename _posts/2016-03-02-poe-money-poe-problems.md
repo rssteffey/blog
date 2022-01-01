@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scarecut
-tags: humor, scary, poe
+tags: humor
 comments: true
 published: true
 description: In which Shawn has a staring contest with a demon during a haircut.

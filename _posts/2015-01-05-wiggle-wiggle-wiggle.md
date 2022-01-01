@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Under Da C#!
-tags: unity, game
+tags: games
 comments: true
 published: true
 description: In which Shawn sets the bait
@@ -18,3 +18,4 @@ As always I'm more caught up in the art than the code, but hopefully I can knock
 To be continued...
 
 ![Unity has no export options for gifs and I had to manually remove the background in photoshop- hence the flickery bits](http://i.imgur.com/Pg2afmA.gif "Unity has no export options for gifs and I had to manually remove the background in photoshop- hence the flickery bits")
+{: style="text-align: center;"}
