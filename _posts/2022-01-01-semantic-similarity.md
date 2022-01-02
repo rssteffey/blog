@@ -18,7 +18,7 @@ Stick around to the end, I promise I'll pop back in to shed some relevance.
 
 ### It's All Semantics
 
-Today I’m going to briefly invite you behind the scenes of a problem solving expedition.  Unfortunately that will require a tiny bit of understanding of how our game<span class="ref"><span class="refnum">[1]</span><span class="refbody">Wordabeasts - Have you missed that?</span> functions.  So let's start with a brief elevator pitch on what [Wordabeasts](http://www.logiraffe.com/wordabeasts) is:
+Today I’m going to briefly invite you behind the scenes of a problem solving expedition.  Unfortunately that will require a tiny bit of understanding of how our game<span class="ref"><span class="refnum">[1]</span><span class="refbody">Wordabeasts - Have you missed that?</span></span> functions.  So let's start with a brief elevator pitch on what [Wordabeasts](http://www.logiraffe.com/wordabeasts) is:
 
 ![](https://i.imgur.com/QsG3ZDj.png "Before we get started, does anyone want to get out? (a pen?  To take notes on this incredible pitch?)")
 
@@ -36,7 +36,7 @@ Unfortunately, that is not a curve that actually works in marketing games from a
 
 We've had fun identifying what exactly is causing the initial frustration.  Part is almost certainly due to the lack of any easily understood tutorial.  Despite my best efforts, the 30 second instruction set at the beginning of new games and the optional full instruction book on the main menu hasn’t seemed to  alleviate too much of the initial confusion.
 
-However, it’s not only that lack of direction impeding impressions.  Due to the nature of the purely randomized word deck, it is very easy for the game to create seemingly impossible scenarios or screw players over at the last second by throwing in a very similar fake word, causing them to miss out on an otherwise perfect clue.  Ideally, a game should feel challenging - but never frustrating.  Frustration is born of a negative experience, and although it only happens in probably 10% of rounds, that is still 1/10 of first-time impressions  that have been tainted. Anything we can do to alleviate that potential possibility would be great.<span class="ref"><span class="refnum">[2]</span><span class="refbody">Shawn from the future here - keep this particular point in mind so later we can laugh at how dumb Past Shawn was</span>
+However, it’s not only that lack of direction impeding impressions.  Due to the nature of the purely randomized word deck, it is very easy for the game to create seemingly impossible scenarios or screw players over at the last second by throwing in a very similar fake word, causing them to miss out on an otherwise perfect clue.  Ideally, a game should feel challenging - but never frustrating.  Frustration is born of a negative experience, and although it only happens in probably 10% of rounds, that is still 1/10 of first-time impressions  that have been tainted. Anything we can do to alleviate that potential possibility would be great.<span class="ref"><span class="refnum">[2]</span><span class="refbody">Shawn from the future here - keep this particular point in mind so later we can laugh at how dumb Past Shawn was</span></span>
 
 
 We’re going to be primarily concerned about two concepts of linguistic measurement here, _semantic relatedness_ and _semantic similarity_.
@@ -44,7 +44,7 @@ We’re going to be primarily concerned about two concepts of linguistic measure
 - Semantic similarity is a quantification of how (you guessed it) _similar_ two words are.  This can be thought of as the thesaurus test. For example the word “pasta” and the word “soup”, while clearly very different in a culinary sense are actually scored very high in terms of semantic similarity.  Both are used in the same general contexts, and are in the same category of Food.
 <br/>
 <br/>
-- Semantic relatedness deals with how often and how closely words are used in context with each other.  Relatedness captures a broader contextual sense than pure similarity.  “Bowl” shares a high degree of semantic relatedness with both “pasta” and “soup”, as it’s often found in the same context.<span class="ref"><span class="refnum">[3]</span><span class="refbody">It’s this same proximity measurement that allows us to calculate the aforementioned similarity of the two foods.  If many analyzed texts use the phrase “pasta in a bowl” or “soup in a bowl”, then we can begin to see those words are contextually replaceable</span>  
+- Semantic relatedness deals with how often and how closely words are used in context with each other.  Relatedness captures a broader contextual sense than pure similarity.  “Bowl” shares a high degree of semantic relatedness with both “pasta” and “soup”, as it’s often found in the same context.<span class="ref"><span class="refnum">[3]</span><span class="refbody">It’s this same proximity measurement that allows us to calculate the aforementioned similarity of the two foods.  If many analyzed texts use the phrase “pasta in a bowl” or “soup in a bowl”, then we can begin to see those words are contextually replaceable</span></span>
 
 ![](https://i.imgur.com/aL5q3zZ.png "Bowl-ing, less semantically related")
 
@@ -54,7 +54,7 @@ Well as established in a previous post, I’ve got a bit of a history with using
 
 ![](https://i.imgur.com/Zjg7Hzh.png "Don't you go trying to ask the alt text for a different answer. Still No.")
 
-Okay fine.  I’m admittedly too guilty of jumping straight into the neural network pool as soon as I’m given a problem in an unfamiliar space.  This is roughly the equivalent of me buying an airplane ticket from Nashville to Knoxville because I can’t be bothered to look up the roads to drive. <span class="ref"><span class="refnum">[4]</span><span class="refbody">I-40.  It's just I-40</span>
+Okay fine.  I’m admittedly too guilty of jumping straight into the neural network pool as soon as I’m given a problem in an unfamiliar space.  This is roughly the equivalent of me buying an airplane ticket from Nashville to Knoxville because I can’t be bothered to look up the roads to drive. <span class="ref"><span class="refnum">[4]</span><span class="refbody">I-40.  It's just I-40</span></span>
 
 Let's do it for real then.
 <br/> <br/>
@@ -71,7 +71,7 @@ To start solving this, it’s easiest to break the root issue down into the two 
 Assuming we already have the two scores of similarity and relatedness from above for any given pair of words, this should be easy to weight!  Only give the player two words with a high score between them, and only add decoy words that have low scores.  Easy peasy. Both problems solved with one stone.
 
 But instantly we’ve broken the number one reason for the game being fun.
-The hail mary moments; the moments when a player receives two words that have no logical measurement of similarity or relatedness, and yet have the perfect connection to bring down the house.  This is playing “Helen Keller” for “Touchy Feely” in _Apples to Apples_.  The wordplay that no computer is going to be able to quantify.<span class="ref"><span class="refnum">[5]</span><span class="refbody">Yet.</span> \\
+The hail mary moments; the moments when a player receives two words that have no logical measurement of similarity or relatedness, and yet have the perfect connection to bring down the house.  This is playing “Helen Keller” for “Touchy Feely” in _Apples to Apples_.  The wordplay that no computer is going to be able to quantify.<span class="ref"><span class="refnum small">[5]</span><span class="refbody">Yet.</span></span> \\
 While squirrel and psychiatrist have a relatively low score of relatedness, a player receiving them could easily submit the clue “nut”.  Semantically, this is a very tough clue to predict, but it’s straightforward for a person to see the connection.
 
 Removing these moments deflates Wordabeasts' main appeal.  Without a doubt the most powerful rushes in the game come from these shots of innovation, not mundanely typing “food” to earn points for the two food items you received.  As such, issue **#1** - while occasionally frustrating - simply cannot be removed without risking our cornerstone.

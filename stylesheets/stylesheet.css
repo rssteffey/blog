@@ -555,3 +555,13 @@ footer a:hover {
     width: 290px;
   }
 }
+
+/* General mobile high-res */
+
+@media 
+	(-webkit-min-device-pixel-ratio: 2) and (max-device-width: 850px), 
+	(min-resolution: 192dpi) and (max-device-width: 850px) { 
+    .refbody{
+      min-width: 6em;
+    }
+}
