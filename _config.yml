@@ -1,6 +1,7 @@
 name: Sketchy Bits
-baseurl: "/blog"
-production_url : http://rssteffey.github.io/blog
-BASE_PATH : http://rssteffey.com/blog
+url: "https://shawn.land"
+baseurl: ""
+production_url: "https://shawn.land"
+BASE_PATH: "https://shawn.land"
 permalink: /:year/:month/:title
 future: true

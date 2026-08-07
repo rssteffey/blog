@@ -33,7 +33,7 @@ But, there is one additional option that I rarely get to use, if only due to the
 
 Now, I can officially use it in the proper context, with the announcement that Sketchy Bits is officially RSS (Rich Site Summary \[or Really Simple Syndication\]) enabled!
 
-This link: <a href="http://rssteffey.github.io/feed.xml" target="_blank">Sketchy Bits RSS Feed</a>, should let you subscribe. Possibly. Maybe.
+This link: <a href="{{ site.url }}{{ site.baseurl }}/feed.xml" target="_blank">Sketchy Bits RSS Feed</a>, should let you subscribe. Possibly. Maybe.
 
 Gotta be honest, I have never used an RSS feed before apart from changing some Rainmeter variables around, so it may take me a while to understand the proper usage and tweaks. Luckily, <a href="http://joelglovier.com/writing/rss-for-jekyll/" target="_blank">this post</a> made it pretty straightforward to wrap my head around implementing here.
 

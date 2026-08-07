@@ -16,7 +16,7 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <link href='http://rssteffey.github.io{{site.baseurl}}/feed.xml' rel='alternate' type='application/atom+xml'>
+    <link href='{{ site.url }}{{ site.baseurl }}/feed.xml' rel='alternate' type='application/atom+xml'>
     <title> {{ page.title }} </title>
 
     <!-- Twitter and Slack link previews -->
@@ -111,11 +111,11 @@
           <span style="font-size: 1.3em; text-decoration: underline;">Popular Posts</span>
           <!-- <hr/> -->
           <ul style="padding-left: 3px; margin-top: 5px;">
-            <li><a href="/blog/2016/10/butterfly">Fenceposts & Butterflies</a></li>
-            <li><a href="/blog/2016/07/highpointers">Highpoints GO™</a></li>
-            <li><a href="/blog/2014/11/my-fridge-is-self-aware">Sentient Fridge</a></li>
-            <li><a href="/blog/2022/01/arcade-1">Nautical Gamin' - Part 1</a></li>
-            <li><a href="/blog/2015/10/leaping-out-on-a-lack-of-tether">Fear is a Good Thing</a></li>
+            <li><a href="{{ site.baseurl }}{% post_url 2016-10-08-butterfly %}">Fenceposts & Butterflies</a></li>
+            <li><a href="{{ site.baseurl }}{% post_url 2016-07-18-highpointers %}">Highpoints GO™</a></li>
+            <li><a href="{{ site.baseurl }}{% post_url 2014-11-11-my-fridge-is-self-aware %}">Sentient Fridge</a></li>
+            <li><a href="{{ site.baseurl }}{% post_url 2022-01-08-arcade-1 %}">Nautical Gamin' - Part 1</a></li>
+            <li><a href="{{ site.baseurl }}{% post_url 2015-10-18-leaping-out-on-a-lack-of-tether %}">Fear is a Good Thing</a></li>
           </ul>
 
           <hr/>
@@ -141,7 +141,7 @@
           
           <p>I can be contacted at<br>rssteffey@gmail.com<br></p>
           
-          <p>Visit my homepage for art and code and stuff<a href="http://www.rssteffey.com"> here</a>! </p>
+          <p>Visit my homepage for art and code and stuff<a href="{{ site.url }}{{ site.baseurl }}/"> here</a>! </p>
           
           <!--Feedburner-->
           <a href="http://feeds.feedburner.com/rssteffey/bfQa" target="_blank"><img src="https://icons.iconarchive.com/icons/tatice/cristal-intense/32/RSS-icon.png"></img></a>
